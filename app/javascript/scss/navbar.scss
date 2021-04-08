@@ -1,0 +1,31 @@
+#nav_logo {
+  height: 50px;
+  width: auto;
+}
+
+.navbar {
+  background-color: rgba(247, 247, 247, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+
+  .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 1);
+  }
+  .navbar-nav:hover {
+    color: blue;
+  }
+  .nav-link:hover {
+    color: blue;
+  }
+}
+
+#navbar_options {
+  text-align: right;
+}
+
+.language:active {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
+}

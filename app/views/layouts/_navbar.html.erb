@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <div id="logo">
+      <%= link_to root_path, class: 'navbar-brand' do %>
+        <%= image_pack_tag 'long_logo_nav.jpeg', id: 'nav_logo' %>
+      <% end %>
+    </div>
+
+    <!-- This is for adaptability for smaller screens -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar_options">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <%= link_to 'Nosotros', root_path(anchor: 'us'), class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Cursos', root_path(anchor: 'courses'), class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Colaboradores', root_path(anchor: 'colaborators'), class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Contacto', root_path(anchor: 'contact'), class: 'nav-link' %>
+        </li>
+        <li class="nav-item <%= 'active' if I18n.locale == :es %>">
+          <%= link_to 'ES', root_path(:es), class: 'nav-link language lang_es' %>
+        </li>
+        <li class="nav-item <%= 'active' if I18n.locale == :de %>">
+          <%= link_to 'DE', root_path(:de), class: 'nav-link language lang_gl' %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

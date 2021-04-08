@@ -1,0 +1,8 @@
+es:
+  layouts:
+    navbar:
+      us: "Nosotros"
+      courses: "Cursos"
+      colaborators: "Colabradores"
+      contact: "Contacto"
+  pages:
