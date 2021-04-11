@@ -34,8 +34,36 @@ section {
 
 .title {
   text-align: center;
+  padding-bottom: 8px;
 }
 
 .subtitle {
   font-size: 22px;
+}
+
+.product-form {
+  padding-top: 85px;
+  padding-bottom: 12px;
+
+  .btn {
+    float: right;
+  }
+}
+
+.required:after {
+  content:" *";
+  color: yellow;
+}
+
+#location_image {
+  height: 450px;
+  width: auto;
+}
+
+#map {
+
+}
+
+#contact_info {
+  margin-bottom: 15px;
 }

@@ -37,4 +37,49 @@
 </section>
 <section class="container" id="contact">
   <h3 class="title">Contacto</h3>
+  <div id="contact_info">
+    <div class="row">
+      <div class="col-md-3">
+        <p>Teléfono:</p>
+        <p>567483923</p>
+      </div>
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-5">
+            <%= image_pack_tag 'location_image.jpeg', id: 'location_image' %>
+          </div>
+          <div class="col-md-7">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.0898400245655!2d-8.552771984396067!3d42.87094787915586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efffc6fd8134d%3A0x9cf432398e91bd56!2sKlasse%20Deutsch!5e0!3m2!1sen!2ses!4v1617996500631!5m2!1sen!2ses" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" id="map"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product_form">
+    <%= form_with local: true do |form| %>
+      <div class="form-group">
+        <label class="required" for="name"><b>Nombre Completo</b></label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Juan Martinez Fernandez" required>
+      </div>
+      <div class="form-group">
+        <label class="required" for="email"><b>Email</b></label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="nombre@email.com" required>
+      </div>
+      <div class="form-group">
+        <label class="required" for="subject"><b>Asusnto</b></label>
+        <input type="text" class="form-control" id="subject" name="subject" placeholder="" required>
+        <div class="invalid-tooltip">
+          Por favor introduzca un asunto.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="required" for="content"><b>Contendo de Email</b></label>
+        <textarea class="form-control" id="_email_content" rows="4" required></textarea>
+        <div class="invalid-tooltip">
+          Por favor introduzca el contenido del email.
+        </div>
+      </div>
+      <button type="submit" class="btn btn-secondary">Submit</button>
+    <% end %>
+  </div>
 </section>
